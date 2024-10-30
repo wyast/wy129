@@ -28,9 +28,10 @@
                     { text: "12. Choose me.", value: "A" },
                     { text: "Please choose A.", value: "B" },
                     { text: "I don't know.", value: "C" },
-                    { text: "I am Raiden Shogun's dog.", value: "D" }
+                    { text: "Hello World.", value: "D" }
                 ],
-                correct: "A"
+                correct: "A",
+                comment: "There are 12 majors in Weiyang College, as is known to all."
             },
             {
                 question: "What is Weiyang College?",
@@ -38,9 +39,10 @@
                     { text: "No better than Genshin.", value: "A" },
                     { text: "Maybe some college in Peking Unv?", value: "B" },
                     { text: "You know, Weiyang College is a college in Tsinghua University, cultivating students with both fundamental science and engineering knowledge, aiming to serve the grand goals of our nation.", value: "C" },
-                    { text: "I am Raiden Shogun's dog.", value: "D" }
+                    { text: "I don't know, but I should go over Calculus now.", value: "D" }
                 ],
-                correct: "C"
+                correct: "C",
+                comment: "Weiyang College is a college in Tsinghua University, cultivating students with both fundamental science and engineering knowledge, aiming to serve the grand goals of our nation. Although you should go over Calculus, it is not the definition of Weiyang."
             },
             {
                 question: "Who are the ministers of the Academy Department of Weiyang AST?",
@@ -50,7 +52,30 @@
                     { text: "Tai Yu.", value: "C" },
                     { text: "Raiden Shogun?", value: "D" }
                 ],
-                correct: ["A", "B", "C"]
+                correct: ["A", "B", "C"],
+                comment: "The ministers of the Academy Department of Weiyang AST are TaiNing Pao, Yitvan Liu, and Tai Yu. Raiden Shogun is not a minister of the Academy Department of Weiyang AST, she is a character in Genshin Impact."
+            },
+            {
+                question: "Who is the head of Weiyang College?",
+                choices: [
+                    { text: "General Jingyuan.", value: "A" },
+                    { text: "Yitvan Liu.", value: "B" },
+                    { text: "Prof Xidong Liang.", value: "C" },
+                    { text: "Albus Dumbledore?", value: "D" }
+                ],
+                correct: ["C"],
+                comment: "Well, well. It is Prof Xidong Liang, not General Jingyuan, Yitvan Liu, or Albus Dumbledore. Common sense, you know."
+            }
+            {
+                question: "What is the url of Weiyang AST?",
+                choices: [
+                    { text: "wyast.github.io", value: "A" },
+                    { text: "https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/pc_backup53", value: "B" },
+                    { text: "www.baidu.com", value: "C" },
+                    { text: "Shall we have a cup of tea?", value: "D" }
+                ],
+                correct: ["A"],
+                comment: "You can try the other options. Find it out yourself."
             }
         ];
 
@@ -125,10 +150,7 @@
             <div class="footer__top">
                 <div class="footer__top-container">
                     <p class="footer__title">
-                        <span>欢迎</span>
-                        <span>加入</span>
-                        <span>未央</span>
-                        <span>科协</span>
+                        <span>为了中华民族伟大复兴而奋斗</span>
                     </p>
                     <!--
                     <a href="./styles/footer/index.html">
@@ -175,7 +197,7 @@
                             <li>
                                 <a
                                     class="footer__link"
-                                    href="https://weyoung-learn.github.io/"
+                                    href="https://wyast.github.io/"
                                     >未央学术部</a
                                 >
                             </li>
