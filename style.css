@@ -84,6 +84,18 @@ main > * {
     grid-column: 2;
 }
 
+.invisible{
+    display: none;
+}
+
+.headjpg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
 /* stylez for da headpic begin */
 .headpic {
     background-color: rgb(139, 0, 18);
