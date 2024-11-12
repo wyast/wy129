@@ -15,7 +15,7 @@
         <main>
             <div id="quiz-container" class="flex-container"></div>
             <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
-            <div id="result" class="invisible">aaa</div>
+            <div id="result" class="invisible">The answers are here.</div>
         </main>
 
         <script>
@@ -135,10 +135,11 @@
                     }
                 }
             });
-
+            document.getElementById("result").classList.remove("invisible")
             alert("Your score is: " + score);
         }
 
+        
         document.addEventListener('DOMContentLoaded', displayQuestions);
         </script>
 
