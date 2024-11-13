@@ -15,7 +15,15 @@
         <main>
             <div id="quiz-container" class="flex-container"></div>
             <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+            <button id="showScoreBtn" class="submit-button" onclick="showScoreSheet()">显示成绩单</button>
             <div id="result" class="invisible">The answers are here.</div>
+            <div id="result-answers" class="invisible"></div>
+            <!-- Better display below -->
+            <div id="answersContainer"></div>
+            <div id="scoreSheet" class="fullscreen" style="display: none;">
+                  <img src="source/grade.png"/ class="score-sheet">
+                  <button id="closebtn" class="submit-button" onclick="closeScoreSheet()">关闭</button>
+            </div>
         </main>
 
         <script>
@@ -76,7 +84,9 @@
                 comment: "You can try the other options. Find it out yourself."
             }
         ];
+        var Answers = [];
 
+        
         function getRandomQuestions(num) {
             const shuffled = questions.sort(() => 0.5 - Math.random());
             return shuffled.slice(0, num);
@@ -88,6 +98,7 @@
             quizContainer.innerHTML = '';
 
             selectedQuestions.forEach((q, index) => {
+                Answers.push(q.correct);
                 const questionDiv = document.createElement('div');
                 questionDiv.className = 'question';
                 questionDiv.innerText = q.question;
@@ -135,12 +146,51 @@
                     }
                 }
             });
+
+
+            var container = document.getElementById('answersContainer');
+
+            var list = document.createElement('ol');
+            list.className = 'answers-list';
+
+            Answers.forEach(function(answer, index) {
+
+                var listItem = document.createElement('li');
+
+                listItem.textContent = '第 ' + (index + 1) + ' 题：' + answer;
+
+                list.appendChild(listItem);
+            });
+
+            container.appendChild(list);
+
+
             document.getElementById("result").classList.remove("invisible")
+            document.getElementById("result-answers").innerText = Answers;
+            document.getElementById("result-answers").classList.remove("invisible")
             alert("Your score is: " + score);
         }
 
+
+
+
         
+
+
         document.addEventListener('DOMContentLoaded', displayQuestions);
+
+
+        function showScoreSheet() {
+            document.getElementById('scoreSheet').style.display = 'flex';
+        }
+
+        function closeScoreSheet() {
+            document.getElementById('scoreSheet').style.display = 'none';
+        }
+
+        // document.getElementById('showScoreBtn').addEventListener('click', showScoreSheet);
+
+
         </script>
 
 
