@@ -15,7 +15,6 @@
         <main>
             <div id="quiz-container" class="flex-container"></div>
             <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
-            <button id="showScoreBtn" class="submit-button" onclick="showScoreSheet()">显示成绩单</button>
             <div id="result" class="invisible">The answers are here.</div>
             <div id="result-answers" class="invisible"></div>
             <!-- Better display below -->
@@ -121,6 +120,43 @@
             });
         }
 
+        function createModel(score) {
+            const modal = document.createElement('div');  
+            modal.id = 'popupModal';  
+            modal.className = 'modal';  
+
+            const modalContent = document.createElement('div');  
+            modalContent.className = 'modal-content';  
+
+            const closeButton = document.createElement('span');  
+            closeButton.className = 'close-button';  
+            closeButton.innerHTML = '&times;';  
+            closeButton.onclick = closeModal;
+
+            const img = document.createElement('img');  
+            img.src = './source/window.png';  
+            img.alt = '弹窗图片';  
+            img.className = 'modal-img';  
+
+            const inputText = document.createElement('input');  
+            inputText.type = 'text';  
+            inputText.id = 'inputText';  
+            inputText.className = 'input-box';  
+            inputText.placeholder = '请输入名字'; 
+            
+            const outputText = document.createElement('div');  
+            outputText.className = 'output-box';  
+            outputText.innerText = score; 
+    
+            modalContent.appendChild(closeButton);  
+            modalContent.appendChild(img);  
+            modalContent.appendChild(inputText);  
+            modalContent.appendChild(outputText);
+
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+        }
+
         function calculateScore() {
             let score = 0;
             const selectedQuestions = document.querySelectorAll('.question');
@@ -164,29 +200,31 @@
 
             container.appendChild(list);
 
+            if (!document.getElementById('popupModal')) {     
+                createModel(score);
+            }  
 
-            document.getElementById("result").classList.remove("invisible")
-            document.getElementById("result-answers").innerText = Answers;
-            document.getElementById("result-answers").classList.remove("invisible")
-            alert("Your score is: " + score);
+            document.getElementById('popupModal').style.display = 'block';
+            document.querySelector('.submit-button').disabled = true;
+            const allChoices = document.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+            allChoices.forEach(choice => {
+                choice.disabled = true;
+            });
         }
 
-
-
-
         
-
+        document.getElementById("result").classList.remove("invisible");
+        document.getElementById("result-answers").innerText = Answers;
+        document.getElementById("result-answers").classList.remove("invisible");
+        
 
         document.addEventListener('DOMContentLoaded', displayQuestions);
 
 
-        function showScoreSheet() {
-            document.getElementById('scoreSheet').style.display = 'flex';
+        function closeModal() {
+            document.getElementById("popupModal").style.display = "none";
         }
 
-        function closeScoreSheet() {
-            document.getElementById('scoreSheet').style.display = 'none';
-        }
 
         // document.getElementById('showScoreBtn').addEventListener('click', showScoreSheet);
 
