@@ -84,8 +84,7 @@ main > * {
     grid-column: 2;
 }
 
-
-.invisible{
+.invisible {
     display: none;
 }
 
@@ -118,8 +117,6 @@ main > * {
     max-height: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* stylez for da headpic begin */
 .headpic {
@@ -528,41 +525,42 @@ main > * {
     align-items: center;
 }
 
-.modal-content {  
-    background: #fff;  
+.modal-content {
+    background: #fff;
     height: 70%;
     width: auto;
-    position: relative;  
-    border-radius: 8px;  
-    max-width: 70%;  
-    max-height: 70%;   
-    overflow: hidden;  
+    position: relative;
+    border-radius: 8px;
+    max-width: 70%;
+    max-height: 70%;
+    overflow: hidden;
     aspect-ratio: 1587 / 2245;
 }
 
 .modal-img {
     display: block;
     max-width: 100%;
-    max-height: 100%; 
-    object-fit: cover; 
+    max-height: 100%;
+    object-fit: cover;
     margin: auto;
 }
 
 .close-button {
-    position: absolute; /* Correspondent to the background */
-    bottom: 7%; 
+    position: absolute;
+    bottom: 7%;
     right: 10%;
+    left: 43%;
+    top: 84%;
     font-size: 28px;
     font-weight: bold;
-    color: #aaa;
+    color: transparent;
     cursor: pointer;
-    padding: 5px 10px; 
-    border: 2px solid #aaa; 
-    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 5px 10px;
+    background-color: transparent;
 }
 
 .close-button:hover {
-    color: #000;
+    color: transparent;
 }
 
 .input-box {
