@@ -16,7 +16,7 @@
                 type="button"
                 class="submit-button"
                 onclick="calculateScore()">
-                Submit
+                提交答案
             </button>
             <div id="result" class="invisible">The answers are here.</div>
             <div id="result-answers" class="invisible"></div>
@@ -344,7 +344,7 @@
             }
 
             function displayQuestions() {
-                const selectedQuestions = getRandomQuestions(2);
+                const selectedQuestions = getRandomQuestions(10);
                 const quizContainer = document.getElementById("quiz-container");
                 quizContainer.innerHTML = "";
 
