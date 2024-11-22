@@ -51,11 +51,12 @@
 
                 selectedQuestions.forEach((q, index) => {
                     console.log(q);
-                    console.log(index);
+                    // console.log(index);
                     Answers.push(q.correct);
                     const questionDiv = document.createElement("div");
                     questionDiv.className = "question";
                     questionDiv.innerText = q.question;
+                    Questions.push(questionDiv);
                     quizContainer.appendChild(questionDiv);
 
                     const choicesDiv = document.createElement("div");
@@ -142,6 +143,10 @@
                             selectedChoices[0].value === correctAnswers
                         ) {
                             score += 1;
+                            // Questions[index].classList.add('correct-color');
+                        }
+                        else {
+                            Questions[index].classList.add('wrong-color');
                         }
                     }
                 });
