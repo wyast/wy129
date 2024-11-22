@@ -50,12 +50,19 @@
                 quizContainer.innerHTML = "";
 
                 selectedQuestions.forEach((q, index) => {
-                    console.log(q);
+                    // console.log(q);
                     // console.log(index);
                     Answers.push(q.correct);
+
+                    var numberSpan = document.createElement('span');
+                    numberSpan.textContent = (index + 1) + ". ";
+                    
+
                     const questionDiv = document.createElement("div");
                     questionDiv.className = "question";
                     questionDiv.innerText = q.question;
+                    questionDiv.insertBefore(numberSpan, questionDiv.firstChild);
+
                     Questions.push(questionDiv);
                     quizContainer.appendChild(questionDiv);
 
