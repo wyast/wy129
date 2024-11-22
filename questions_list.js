@@ -551,7 +551,709 @@ const questions = [
         ],
         correct: "A",
     },
-
-
-
+    {
+        question: "一二·九运动在历史上讲，是准备____的一个非常重要的方面，",
+        choices: [
+            { text: "百团大战", value: "A" },
+            { text: "抗日战争", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1935年，党领导了“一二·九”学生运动，掀起了要求____的强大群众斗争，",
+        choices: [
+            { text: "停止内战、抗日救亡", value: "A" },
+            { text: "打倒国民党", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "1935年12月14日 北平市长____邀各校学生代表举行茶话会，力劝学生即日复课，“勿作轨外行动”，“顾及华北现在环境，勿因言语引起对外纠纷”，",
+        choices: [
+            { text: "秦德纯", value: "A" },
+            { text: "张发奎", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "九一八事变后，日本帝国主义进一步发动华北事变，企图使____五省脱离中国，由日本控制。在这个历史背景下，中国共产党领导了“一二·九”学生抗日救亡爱国运动，",
+        choices: [
+            { text: "冀、鲁、晋、察、黑", value: "A" },
+            { text: "冀、鲁、晋、察、绥", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1935年12月18日，中华全国总工会发表____，号召全国各业、各厂的男女工友起来召集群众会议，发表宣言和通电，抗议汉奸卖国贼出卖华北与屠杀、逮捕爱国学生，支持一二·九学生运动，",
+        choices: [
+            { text: "《自卫抗战声明书》", value: "A" },
+            { text: "《为援助北平学生救国运动告工友书》", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "在一二·九运动中，北平各大中学校发表联合宣言，宣布自____起举行总罢课。提出罢课的具体目标是:一、誓死反对分割我国领土主权的傀儡组织；二、反对投降外交；三、要求动员全国抗日；四、争取救国自由。呼吁全国各界立即响应，一致行动。要求当局立即释放被捕学生，撤回封锁各校的军警，",
+        choices: [
+            { text: "12月9日", value: "A" },
+            { text: "12月10日", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1935年“一二·九”运动爆发时，北平学联总部设在（），",
+        choices: [
+            { text: "清华园", value: "A" },
+            { text: "燕京大学", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "“华北之大，已经安放不得一张平静的书桌了！”这句震撼人心的话出自（），",
+        choices: [
+            { text: "蒋南翔起草的《告全国民众书》", value: "A" },
+            { text: "清华学生自治会宣言", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "在“一二·一六”示威中，勇敢爬进宣武门并被美国记者誉为中国“贞德”的清华女学生是，",
+        choices: [
+            { text: "陆璀", value: "A" },
+            { text: "郭明秋", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "1935年12月9日，清华等学校学生游行队伍首先前往，",
+        choices: [
+            { text: "西直门", value: "A" },
+            { text: "东直门", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "“一二·九”运动后，北平各校学生采取的首要行动是，",
+        choices: [
+            { text: "实行总罢课", value: "A" },
+            { text: "继续游行示威", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "在中共中央1935年11月发布的《关于青年工作的决定》的精神指引下，中共北平市委书记林枫与姚依林等人在“清华同学会”举行会议，决定成立，",
+        choices: [
+            { text: "“南下扩大宣传团”", value: "A" },
+            { text: "“民族解放先锋队”", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "“一二·九”运动爆发的直接背景是，",
+        choices: [
+            { text: "日本提出“华北特殊化”，加紧侵占华北", value: "A" },
+            { text: "日军占领东北三省", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "“一二·九”运动得到的国际响应包括，",
+        choices: [
+            { text: "国际学生联合会的声援", value: "A" },
+            { text: "国际联盟的介入", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "清华学生在“一二·九”运动后开展的重要活动是，",
+        choices: [
+            { text: "组织南下宣传团到农村进行抗日宣传", value: "A" },
+            { text: "参与武装起义", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "中国特色社会主义事业总体布局的五位一体不包括：",
+        choices: [
+            { text: "军事建设", value: "A" },
+            { text: "生态文明建设", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "新发展理念不包括：",
+        choices: [
+            { text: "协调", value: "A" },
+            { text: "快速", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "全面从严治党不包括以下哪个建设：",
+        choices: [
+            { text: "政治建设", value: "A" },
+            { text: "文化建设", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "坚持和完善社会主义基本经济制度不包括：",
+        choices: [
+            { text: "使市场在资源配置中起决定性作用", value: "A" },
+            { text: "大力发展制造业", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "习近平指出我国哲学社会科学的一项重要任务就是继续推进马克思主义三化，其中不包括：",
+        choices: [
+            { text: "大众化", value: "A" },
+            { text: "深刻化", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "中国特色社会主义事业战略布局不包括：",
+        choices: [
+            { text: "全面建设小康", value: "A" },
+            { text: "全面深化改革", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "以下哪项不属于六个坚持：",
+        choices: [
+            { text: "坚持实地考察", value: "A" },
+            { text: "坚持胸怀天下", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "（ ）是实现社会主义现代化、创造人民美好生活的必由之路：",
+        choices: [
+            { text: "中国特色社会主义道路", value: "A" },
+            { text: "中国特色社会主义制度", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "（ ）是当代中国精神的集中体现：",
+        choices: [
+            { text: "社会主义核心价值观", value: "A" },
+            { text: "中国梦", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "“五年来，我们统筹推进（ ）总体布局，协调推进（ ）战略布局”：",
+        choices: [
+            { text: "五个全面，四位一体", value: "A" },
+            { text: "五位一体，四个全面", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "民族团结是我国各族人民的生命线， （ ）是民族团结之本：",
+        choices: [
+            { text: "从中华民族整体利益的高度想问题", value: "A" },
+            { text: "中华民族共同体意识", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "（ ）是社会主义民主政的本质属性，是最广泛最真实最管用的民主：",
+        choices: [
+            { text: "民主集中制", value: "A" },
+            { text: "全过程人民民主", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "我们能不能如期全面建成社会主义现代化强国，关键看（ ）：",
+        choices: [
+            { text: "科技自立自强", value: "A" },
+            { text: "尖端科技", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "（ ）是党领导人民治理国家的基本方式：",
+        choices: [
+            { text: "多党合作政治协商", value: "A" },
+            { text: "依法治国", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "总体国家安全观要以（ ）为根本：",
+        choices: [
+            { text: "政治安全", value: "A" },
+            { text: "人民安全", value: "B" },
+        ],
+        correct: "A",
+    },
+[
+    {
+        question: "加强（ ）是全面从严治党的长远之策，根本之策：",
+        choices: [
+            { text: "制度建设", value: "A" },
+            { text: "组织建设", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "“要树牢绿水青山就是金山银山的理念，驰而不息打好（ ）三大保卫战”：",
+        choices: [
+            { text: "蓝天、绿水、青山", value: "A" },
+            { text: "蓝天、碧水、净土", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "我国经济转向高质量发展阶段的趋势性特征是增长动力由（ ）：",
+        choices: [
+            { text: "规模速度型粗放增长转向质量效率型集约增长", value: "A" },
+            { text: "要素驱动、投资驱动转向创新驱动", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "（ ）是社会主义民主政治建设的基础：",
+        choices: [
+            { text: "基层群众政治制度", value: "A" },
+            { text: "人民代表大会制度", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "（ ）是最大的民生：",
+        choices: [
+            { text: "教育", value: "A" },
+            { text: "就业", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "当前和今后一个时期，我国经济发展面临的问题，供给和需求两侧都有，但矛盾的主要方面在（ ）：",
+        choices: [
+            { text: "供给侧", value: "A" },
+            { text: "需求侧", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "习近平生态文明思想的基本内容为（ ）：",
+        choices: [
+            { text: "八个坚持", value: "A" },
+            { text: "十个坚持", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "全面依法治国是一个系统工程，其中要率先突破的是（ ）：",
+        choices: [
+            { text: "法治社会建设", value: "A" },
+            { text: "法治政府建设", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "新时代坚持和发展中国特色社会主义根本动力仍然是（ ）：",
+        choices: [
+            { text: "全面深化改革", value: "A" },
+            { text: "全面依法治国", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "（ ）是当代中国发展进步的活力之源：",
+        choices: [
+            { text: "中国特色社会主义制度", value: "A" },
+            { text: "改革开放", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "原名为“清华大学学生第十食堂”的清华校内食堂，现名为：",
+        choices: [
+            { text: "清芬园", value: "A" },
+            { text: "听涛园", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "以下哪位无产阶级革命家是清华大学校友？",
+        choices: [
+            { text: "姚依林", value: "A" },
+            { text: "李鹏", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "以下哪项清华传统不是在蒋南翔校长倡导提出的？",
+        choices: [
+            { text: "“双肩挑”政治辅导员制度", value: "A" },
+            { text: "“从游文化”", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "以下哪位名师大家担任过清华大学理学院院长？",
+        choices: [
+            { text: "顾毓琇", value: "A" },
+            { text: "叶企孙", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1937年，哪三所大学在长沙组建国立长沙临时大学，后西迁昆明，改成国立西南联合大学？",
+        choices: [
+            { text: "国立清华大学、国立北京大学、私立南开大学", value: "A" },
+            { text: "国立清华大学、国立北京大学、国立燕京大学", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "清华大学的办学风格为：",
+        choices: [
+            { text: "又红又专，全面发展", value: "A" },
+            { text: "中西融会、古今贯通、文理渗透", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "在工字厅的历史上，它没有成为过：",
+        choices: [
+            { text: "知名学者的下榻场所", value: "A" },
+            { text: "莘莘学子的教学场所", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "清华大学的校名是毛泽东于哪一年题写的：",
+        choices: [
+            { text: "1949年", value: "A" },
+            { text: "1950年", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "五四运动之后，施滉、冀朝鼎等学生继续坚持着探求救国道路。在清华他们成立了以下哪个社团：",
+        choices: [
+            { text: "TMS协会", value: "A" },
+            { text: "唯真学会", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "哪位校长任职期间决定清华开始招收女生：",
+        choices: [
+            { text: "梅贻琦", value: "A" },
+            { text: "罗家伦", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "请问下面哪栋清华早期建筑的建成时间更早：",
+        choices: [
+            { text: "清华学堂", value: "A" },
+            { text: "清华大学老图书馆", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "清华大学特等奖学金设立于哪一年：",
+        choices: [
+            { text: "1999年", value: "A" },
+            { text: "1989年", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1999年9月，国家表彰“两弹一星”功勋23位，其中有14位是清华校友，请问以下哪一位两弹元勋不包含在内：",
+        choices: [
+            { text: "王淦昌", value: "A" },
+            { text: "钱骥", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "“华北之大已经不能安放下一张平静的书桌”出自一二·九运动一位学生领袖之笔，他当时也是清华地下党支部书记，并在新中国成立后担任过清华大学校长，请问他是谁？",
+        choices: [
+            { text: "蒋南翔", value: "A" },
+            { text: "冯友兰", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "清华大学第一个党支部的建立时间是？",
+        choices: [
+            { text: "1924年", value: "A" },
+            { text: "1926年", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "以下对“双十协定”内容描述有误的是：",
+        choices: [
+            { text: "长期合作，坚决避免内战，建设独立、自由和富强的新中国，彻底实行三民主义。", value: "A" },
+            { text: "迅速结束军政，实施宪政。", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "以下对秋收起义介绍正确的是：",
+        choices: [
+            { text: "中共中央已经确立了土地革命的总方针", value: "A" },
+            { text: "革命军在起义后直接转进井冈山", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "1978年5月11日，（）公开发表了《实践是检验真理的唯一标准》",
+        choices: [
+            { text: "《人民日报》", value: "A" },
+            { text: "《光明日报》", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "首次邀请民主党派参与的中共全国代表大会是：",
+        choices: [
+            { text: "中共八大", value: "A" },
+            { text: "中共九大", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "1923年6月12日至20日，在广州召开的（）对国共合作的方针和方法做出了正式的决定",
+        choices: [
+            { text: "中共二大", value: "A" },
+            { text: "中共三大", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1947年《中国土地法大纲》规定的土地分配方法是____。",
+        choices: [
+            { text: "按人口平均分配", value: "A" },
+            { text: "按实际劳动力分配", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "把邓小平理论确立为党的指导思想的是____。",
+        choices: [
+            { text: "党的十四大", value: "A" },
+            { text: "党的十五大", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "第一届全国人民代表大会选举的人大常委会委员长是____。",
+        choices: [
+            { text: "董必武", value: "A" },
+            { text: "刘少奇", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "（ ）拉开了中国新民主主义革命的帷幕",
+        choices: [
+            { text: "五四运动", value: "A" },
+            { text: "中国共产党成立", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "1949年，毛泽东提出了三条基本外交方针，不包括（ ）",
+        choices: [
+            { text: "另起炉灶", value: "A" },
+            { text: "一致对外", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "以下革命或运动获得成功的是",
+        choices: [
+            { text: "二次革命", value: "A" },
+            { text: "护国运动", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "清末新政的内容不包括：",
+        choices: [
+            { text: "编练“新军”", value: "A" },
+            { text: "设立北大前身京师大学堂", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "西方列强向世界急剧扩张、殖民主义世界体系开始形成是在____。",
+        choices: [
+            { text: "西方冒险家开始环球航行后", value: "A" },
+            { text: "西方实现工业革命后", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "第一个规定列强在华享有领事裁判权的条约是____。",
+        choices: [
+            { text: "《五口通商章程》", value: "A" },
+            { text: "《虎门条约》", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "毛泽东主持制定的中国共产党历史上第一个土地法是",
+        choices: [
+            { text: "《中国土地法大纲》", value: "A" },
+            { text: "《井冈山土地法》", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "中国抗战以来第一次大捷是（ ）",
+        choices: [
+            { text: "平型关大捷", value: "A" },
+            { text: "台儿庄大捷", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "敦促日本无条件投降的会议是",
+        choices: [
+            { text: "雅尔塔会议", value: "A" },
+            { text: "开罗会议", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "社会主义三大改造在（ ）年底基本完成",
+        choices: [
+            { text: "1954", value: "A" },
+            { text: "1956", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "朝鲜战争中国人民志愿军司令员兼政治委员是（ ）",
+        choices: [
+            { text: "林彪", value: "A" },
+            { text: "彭德怀", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "新中国外交政策成熟的标志是（ ）",
+        choices: [
+            { text: "提出和平共处五项原则", value: "A" },
+            { text: "提出“求同存异”方针", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "第一个与新中国建交的西方大国是（ ）",
+        choices: [
+            { text: "英国", value: "A" },
+            { text: "法国", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1956年7月，我国第一批国产汽车（）牌载重汽车在长春第一汽车制造厂试制成功",
+        choices: [
+            { text: "红旗", value: "A" },
+            { text: "解放", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "第（ ）届联合国代表大会通过决议，恢复中华人民共和国在联合国中的合法席位。",
+        choices: [
+            { text: "25", value: "A" },
+            { text: "26", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1953年6月，中共中央公布了过渡时期总路线，其主体是",
+        choices: [
+            { text: "实现社会主义信息化", value: "A" },
+            { text: "逐步实现社会主义工业化", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "中共十一届三中全会的中心议题是讨论把党的工作重点转移到（ ）上来",
+        choices: [
+            { text: "社会主义发展", value: "A" },
+            { text: "社会主义经济建设", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1978年12月，18户农民秘密签订契约，决定将集体耕地承包到户，搞大包干的地方是",
+        choices: [
+            { text: "安徽凤阳小岗村", value: "A" },
+            { text: "山西昔阳大寨村", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "下列论断属于邓小平同志在1992年“南方谈话”时提出的是（ ）",
+        choices: [
+            { text: "中国要警惕右，但主要是防止“左”", value: "A" },
+            { text: "社会主义也可以搞市场经济", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "（ ）是现阶段我国经济发展和经济工作的主线。",
+        choices: [
+            { text: "转变经济发展方式", value: "A" },
+            { text: "推进供给侧结构性改革", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "中共十三大明确将党在社会主义初级阶段的基本路线概括为（ ）",
+        choices: [
+            { text: "“一个中心，两个基本点”", value: "A" },
+            { text: "“四个坚持”", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "1992年，“南方谈话”，邓小平同志提出怎样的经济发展思想",
+        choices: [
+            { text: "科学技术是第一生产力", value: "A" },
+            { text: "发展才是硬道理", value: "B" },
+        ],
+        correct: "B",
+    },
+    {
+        question: "1941年3月，在重庆成立的民主党派是",
+        choices: [
+            { text: "中国民主政团同盟", value: "A" },
+            { text: "中国青年党", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "我国第一颗原子弹爆炸成功的时间是（ ）",
+        choices: [
+            { text: "1964/10/1", value: "A" },
+            { text: "1962/10/1", value: "B" },
+        ],
+        correct: "A",
+    },
+    {
+        question: "“三个代表”重要思想的本质是（ ）。",
+        choices: [
+            { text: "实事求是", value: "A" },
+            { text: "立党为公，执政为民", value: "B" },
+        ],
+        correct: "B",
+    }
 ];
