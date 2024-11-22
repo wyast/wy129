@@ -23,7 +23,7 @@ const questions = [
         choices: [
             {
                 text: "中华人民共和国全国人民代表大会和中国人民政治协商会议",
-                value: "B",
+                value: "A",
             },
             { text: "中华人民共和国全国人民代表大会和全国人民政治协商会议", value: "B" },
         ],
@@ -170,7 +170,7 @@ const questions = [
             { text: "反帝反封建", value: "A" },
             {
                 text: "农村包围城市，武装夺取政权",
-                value: "A",
+                value: "B",
             },
         ],
         correct: "A",
@@ -791,7 +791,6 @@ const questions = [
         ],
         correct: "A",
     },
-[
     {
         question: "加强（ ）是全面从严治党的长远之策，根本之策：",
         choices: [
