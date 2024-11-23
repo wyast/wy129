@@ -96,7 +96,12 @@
                 const closeButton = document.createElement("span");
                 closeButton.className = "close-button";
                 closeButton.innerHTML = "&times;";
-                closeButton.onclick = closeModal;
+                closeButton.onclick = function () {
+                    const userInput = document.getElementById("inputText").value;
+                    console.log(userInput,score);//这一行要改成发送
+                    alert("保存成功");
+                    closeModal();
+                };
 
                 const img = document.createElement("img");
                 img.src = "./source/window.png";

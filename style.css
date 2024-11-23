@@ -566,11 +566,10 @@ main > * {
 
 .input-box {
     position: absolute; /* Correspondent to the background */
-    top: 37%;
+    top: 35%;
     left: 43%;
     width: 40%;
     height: 5%;
-    padding: 8px;
     border: 1px solid black;
     font-size: 16px;
     z-index: 1001;
@@ -578,11 +577,10 @@ main > * {
 
 .output-box {
     position: absolute; /* Correspondent to the background */
-    top: 60%;
+    top: 58%;
     left: 60%;
     width: 40%;
     height: 5%;
-    padding: 8px;
     background-color: #fff;
     border: 1px solid black;
     font-size: 16px;
