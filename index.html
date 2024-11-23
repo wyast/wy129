@@ -3,6 +3,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
+        <script src = "questions_list.js"></script>
         <title>未央书院一二九快乐答题活动</title>
     </head>
     <body>
@@ -18,7 +19,7 @@
                 onclick="calculateScore()">
                 提交答案
             </button>
-            <div id="result" class="invisible">The answers are here.</div>
+            <div id="result" class="invisible">提交后显示答案。</div>
             <div id="result-answers" class="invisible"></div>
             <!-- Better display below -->
             <div id="answersContainer"></div>
@@ -34,308 +35,8 @@
         </main>
 
         <script>
-            const questions = [
-                {
-                    question:
-                        "中国共产党第一次全国代表大会于1921年在上海和浙江嘉兴召开，会议选举了（ ）任书记。",
-                    choices: [
-                        { text: "陈独秀", value: "A" },
-                        { text: "李大钊", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "“一五”计划，是指我国从1953年到1957年发展国民经济的计划。它是在党中央的直接领导下，由（ ）、（ ）同志主持制定的。",
-                    choices: [
-                        { text: "周恩来 陈云", value: "A" },
-                        { text: "毛泽东 周恩来", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "全国人大常委会会议12月30日表决通过了关于召开十四届全国人大一次会议的决定。根据决定，十四届全国人大一次会议于2023年3月5日在北京召开。政协第十三届全国委员会召开主席会议，建议全国政协十四届一次会议于2023年3月4日在北京召开，请问两会的全称是?	",
-                    choices: [
-                        {
-                            text: "中华人民共和国全国人民代表大会和中国人民政治协商会议",
-                            value: "中华人民共和国全国人民代表大会和全国人民政治协商会议",
-                        },
-                        { text: "毛泽东 周恩来", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "2022 年 10 月 16 日，习近平在中国共产党第二十次全国代表大会上的报告指出，我们深入推进全面从严治党，坚持打铁必须自身硬，提出和落实新时代（   ）总要求。",
-                    choices: [
-                        { text: "党的政治建设", value: "A" },
-                        { text: "党的建设", value: "B" },
-                    ],
-                    correct: "B",
-                },
-                {
-                    question:
-                        "2022 年 10 月 16 日，习近平在中国共产党第二十次全国代表大会上的报告指出，拥有马克思主义科学理论指导是我们党（    ）的根本所在。",
-                    choices: [
-                        { text: "坚定信仰信念、把握历史主动", value: "A" },
-                        { text: "坚定信仰信念、把握发展规律", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "1928年6月18日至7月11日，中国共产党第六次全国代表大会在（ ）召开。",
-                    choices: [
-                        { text: "莫斯科", value: "A" },
-                        { text: "上海", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "抗战时期清华、北大和南开南迁昆明组成西南联大，在极度艰苦的条件下仍弦歌不辍，创造了战时高等教育的奇迹。请问下面歌词中描写西南联大的是哪一句？",
-                    choices: [
-                        {
-                            text: "千秋耻，终当雪，中业兴，继往烈。",
-                            value: "A",
-                        },
-                        {
-                            text: "西山苍苍，东海茫茫，吾校庄严，巍然中央。",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "中国从1953年开始制定第一个“五年计划”。从（）起，“五年计划”改为“五年规划”。",
-                    choices: [
-                        { text: "十一五", value: "A" },
-                        { text: "十三五", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "十四五规划强调“坚持（）在我国现代化建设全局中的核心地位。",
-                    choices: [
-                        { text: "创新", value: "A" },
-                        { text: "发展", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "党的四大最重要的贡献是第一次明确提出了无产阶级在（ ）革命中的领导权和（ ）问题。",
-                    choices: [
-                        { text: "民主 工农联盟", value: "A" },
-                        { text: "社会主义 资产阶级", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "1949年3月,党的七届二中全会在河北西柏坡召开。会议着重讨论了党的工作重心的战略转移,即（）的问题。",
-                    choices: [
-                        { text: "从乡村转移到城市", value: "A" },
-                        {
-                            text: "从新民主主义社会转变到社会主义社会",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "我国历史上的社会主义“过渡时期”是指（）建国到抗美援朝胜利。",
-                    choices: [
-                        { text: "全国解放到社会主义改造基本完成", value: "A" },
-                        { text: "建国到社会主义改造基本完成", value: "B" },
-                    ],
-                    correct: "B",
-                },
-                {
-                    question:
-                        "1960年代初，我国为进行经济恢复和建设，实施（）的工作方针",
-                    choices: [
-                        { text: "“调整，巩固，充实，提高”", value: "A" },
-                        { text: "“一体两翼，一化三改”", value: "B" },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "1972年，时任美国总统尼克松访问中国，以下哪项为此次访问直接达成的结果：",
-                    choices: [
-                        {
-                            text: "推动美国乒乓球队访华，开启中美两国的民众交流",
-                            value: "A",
-                        },
-                        { text: "两国签署《上海公报》", value: "B" },
-                    ],
-                    correct: "B",
-                },
-                {
-                    question: "党的十四大明确了我国经济改革的目标是：",
-                    choices: [
-                        { text: "建立社会主义市场经济体制", value: "A" },
-                        {
-                            text: "建立以公有制为主体，多种所有制经济共同发展的混合所有制",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question: "15. 党的十四大明确了我国经济改革的目标是：",
-                    choices: [
-                        { text: "建立社会主义市场经济体制", value: "A" },
-                        {
-                            text: "建立以公有制为主体，多种所有制经济共同发展的混合所有制",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question: "15. 党的十四大明确了我国经济改革的目标是：",
-                    choices: [
-                        { text: "建立社会主义市场经济体制", value: "A" },
-                        {
-                            text: "建立以公有制为主体，多种所有制经济共同发展的混合所有制",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "党的二十届二中全会审议通过了《党和国家机构改革方案》，同意将其中涉及国务院机构改革的内容提交______________审议。",
-                    choices: [
-                        { text: "第十四届政治协商会议第一次会议", value: "A" },
-                        {
-                            text: "第十四届全国人民代表大会第一次会议",
-                            value: "B",
-                        },
-                    ],
-                    correct: "B",
-                },
-                {
-                    question:
-                        "党的二大的主要功绩是，在中国近代史上第一次明确地提出了（ ）的民主革命纲领。",
-                    choices: [
-                        { text: "反帝反封建", value: "A" },
-                        {
-                            text: "农村包围城市，武装夺取政权",
-                            value: "A",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "“一国两制”的根本宗旨是维护国家主权、安全、发展利益，保持香港、澳门长期繁荣稳定；____是“一国两制”方针的最高原则。",
-                    choices: [
-                        { text: "维护国家主权、安全、发展利益", value: "A" },
-                        {
-                            text: "保持香港、澳门长期繁荣稳定",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "党的十八大以来，以习近平同志为核心的党中央把粮食安全作为治国理政的头等大事，提出确保____的新粮食安全观，牢牢把住粮食安全主动权，带领亿万人民走出了一条中国特色粮食安全之路。",
-                    choices: [
-                        { text: "谷物完全自给、口粮基本安全", value: "A" },
-                        {
-                            text: "谷物基本自给、口粮绝对安全",
-                            value: "B",
-                        },
-                    ],
-                    correct: "B",
-                },
-                {
-                    question:
-                        "据新华社2022年8月18日报道，中共中央总书记、国家主席、中央军委主席习近平近日在辽宁考察时指出，小康梦、强国梦、中国梦，归根到底是老百姓的____。中国共产党的一切奋斗都是____。",
-                    choices: [
-                        { text: "“幸福梦” 为民族谋复兴", value: "A" },
-                        {
-                            text: "“幸福梦” 为人民谋幸福",
-                            value: "B",
-                        },
-                    ],
-                    correct: "B",
-                },
-                {
-                    question:
-                        "据新华社2022年8月18日报道，中共中央总书记、国家主席、中央军委主席习近平近日在辽宁考察时强调，党中央实施创新驱动发展战略，格外重视____，格外重视____，努力提升我国产业水平和实力，推动我国从经济大国向经济强国、制造强国转变。",
-                    choices: [
-                        { text: "自主创新 创新环境建设", value: "A" },
-                        {
-                            text: "制度创新 创新环境建设",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "________是中国革命具有决定意义的新起点。毛泽东同志领导军民在井冈山建立第一个农村革命根据地，党领导人民打土豪、分田地。",
-                    choices: [
-                        { text: "从进攻大城市转为向农村进军", value: "A" },
-                        {
-                            text: "中国共产党成立",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-                {
-                    question:
-                        "一九五四年，召开第一届全国人民代表大会第一次会议，通过了__________。",
-                    choices: [
-                        {
-                            text: "《中国人民政治协商会议共同纲领》",
-                            value: "A",
-                        },
-                        {
-                            text: "《中华人民共和国宪法》",
-                            value: "B",
-                        },
-                    ],
-                    correct: "B",
-                },
-                {
-                    question:
-                        "党坚持独立自主的和平外交政策，倡导和坚持和平共处五项原则，坚定维护国家独立、主权、尊严，支持和援助世界被压迫民族解放事业、新独立国家建设事业和各国人民正义斗争，反对_____________，彻底结束了旧中国的屈辱外交。",
-                    choices: [
-                        {
-                            text: "帝国主义、封建主义、官僚资本主义",
-                            value: "A",
-                        },
-                        {
-                            text: "帝国主义、霸权主义、殖民主义、种族主义",
-                            value: "B",
-                        },
-                    ],
-                    correct: "B",
-                },
-                {
-                    question:
-                        "改革开放以后，我国人民生活显著改善，社会治理明显改进。同时，随着时代发展和社会进步，人民对美好生活的向往更加强烈，对民主、法治、公平、正义、安全、环境等方面的要求日益增长。党中央强调，___________就是我们的奋斗目标。",
-                    choices: [
-                        { text: "人民对美好生活的向往", value: "A" },
-                        {
-                            text: "增进民生福祉",
-                            value: "B",
-                        },
-                    ],
-                    correct: "A",
-                },
-            ];
+            // move questions to questions_list.js
+            var Questions = [];
             var Answers = [];
 
             function getRandomQuestions(num) {
@@ -349,10 +50,20 @@
                 quizContainer.innerHTML = "";
 
                 selectedQuestions.forEach((q, index) => {
+                    // console.log(q);
+                    // console.log(index);
                     Answers.push(q.correct);
+
+                    var numberSpan = document.createElement('span');
+                    numberSpan.textContent = (index + 1) + ". ";
+                    
+
                     const questionDiv = document.createElement("div");
                     questionDiv.className = "question";
                     questionDiv.innerText = q.question;
+                    questionDiv.insertBefore(numberSpan, questionDiv.firstChild);
+
+                    Questions.push(questionDiv);
                     quizContainer.appendChild(questionDiv);
 
                     const choicesDiv = document.createElement("div");
@@ -385,7 +96,12 @@
                 const closeButton = document.createElement("span");
                 closeButton.className = "close-button";
                 closeButton.innerHTML = "&times;";
-                closeButton.onclick = closeModal;
+                closeButton.onclick = function () {
+                    const userInput = document.getElementById("inputText").value;
+                    console.log(userInput,score);//这一行要改成发送
+                    alert("保存成功");
+                    closeModal();
+                };
 
                 const img = document.createElement("img");
                 img.src = "./source/window.png";
@@ -439,17 +155,21 @@
                             selectedChoices[0].value === correctAnswers
                         ) {
                             score += 1;
+                            // Questions[index].classList.add('correct-color');
+                        }
+                        else {
+                            Questions[index].classList.add('wrong-color');
                         }
                     }
                 });
 
                 var container = document.getElementById("answersContainer");
 
-                var list = document.createElement("ol");
+                var list = document.createElement("div");
                 list.className = "answers-list";
 
                 Answers.forEach(function (answer, index) {
-                    var listItem = document.createElement("li");
+                    var listItem = document.createElement("ol");
 
                     listItem.textContent =
                         "第 " + (index + 1) + " 题：" + answer;
