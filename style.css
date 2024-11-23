@@ -584,7 +584,7 @@ main > * {
     height: 5%;
     font-family: Georgia, "Times New Roman", Times, serif;
     background-color: transparent;
-    font-size: 66px;
+    font-size: 5vw;
     z-index: 1001;
     color: rgb(139, 0, 18);
 }
