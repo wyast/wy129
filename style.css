@@ -568,25 +568,33 @@ main > * {
     position: absolute; /* Correspondent to the background */
     top: 35%;
     left: 43%;
-    width: 40%;
+    width: 28%;
     height: 5%;
-    border: 1px solid black;
+    border: transparent;
+    background-color: transparent;
     font-size: 16px;
     z-index: 1001;
 }
 
 .output-box {
     position: absolute; /* Correspondent to the background */
-    top: 58%;
-    left: 60%;
-    width: 40%;
+    top: 52%;
+    left: 68%;
+    width: 20%;
     height: 5%;
-    background-color: #fff;
-    border: 1px solid black;
-    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: transparent;
+    font-size: 66px;
     z-index: 1001;
+    color: rgb(139, 0, 18);
 }
 
 .wrong-color {
-    color : red;
+    color: red;
+    font-weight: bold;
+}
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
 }

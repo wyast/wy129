@@ -3,7 +3,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
-        <script src = "questions_list.js"></script>
+        <script src="questions_list.js"></script>
         <title>未央书院一二九快乐答题活动</title>
     </head>
     <body>
@@ -54,14 +54,16 @@
                     // console.log(index);
                     Answers.push(q.correct);
 
-                    var numberSpan = document.createElement('span');
-                    numberSpan.textContent = (index + 1) + ". ";
-                    
+                    var numberSpan = document.createElement("span");
+                    numberSpan.textContent = index + 1 + ". ";
 
                     const questionDiv = document.createElement("div");
                     questionDiv.className = "question";
                     questionDiv.innerText = q.question;
-                    questionDiv.insertBefore(numberSpan, questionDiv.firstChild);
+                    questionDiv.insertBefore(
+                        numberSpan,
+                        questionDiv.firstChild
+                    );
 
                     Questions.push(questionDiv);
                     quizContainer.appendChild(questionDiv);
@@ -97,8 +99,9 @@
                 closeButton.className = "close-button";
                 closeButton.innerHTML = "&times;";
                 closeButton.onclick = function () {
-                    const userInput = document.getElementById("inputText").value;
-                    console.log(userInput,score);//这一行要改成发送
+                    const userInput =
+                        document.getElementById("inputText").value;
+                    console.log(userInput, score); //这一行要改成发送
                     alert("保存成功");
                     closeModal();
                 };
@@ -156,11 +159,29 @@
                         ) {
                             score += 1;
                             // Questions[index].classList.add('correct-color');
-                        }
-                        else {
-                            Questions[index].classList.add('wrong-color');
+                        } else {
+                            Questions[index].classList.add("wrong-color");
                         }
                     }
+                    // add correct answer color
+                    const choices = document.querySelectorAll(
+                        `input[name="question${questionIndex}"]`
+                    );
+                    choices.forEach((choice) => {
+                        if (Array.isArray(correctAnswers)) {
+                            if (correctAnswers.includes(choice.value)) {
+                                choice.parentElement.classList.add(
+                                    "correct-answer"
+                                );
+                            }
+                        } else {
+                            if (choice.value === correctAnswers) {
+                                choice.parentElement.classList.add(
+                                    "correct-answer"
+                                );
+                            }
+                        }
+                    });
                 });
 
                 var container = document.getElementById("answersContainer");
