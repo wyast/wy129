@@ -560,7 +560,7 @@ main > * {
     background-color: transparent;
 }
 
-.close-button:hover 
+.close-button:hover {
     color: transparent;
 }
 
