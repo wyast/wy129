@@ -559,7 +559,7 @@ main > * {
 @media (max-width: 768px) {
     .modal-content {
         width: 70%; /* Increase width for larger screens */
-        top: 0%;
+        top: 20%;
         left: 15%;
     }
 }
